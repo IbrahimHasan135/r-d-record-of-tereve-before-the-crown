@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://cm7fly61wap4x"]
+[gd_scene load_steps=2 format=3 uid="uid://cm7fly61wap4x"]
+
+[ext_resource type="PackedScene" uid="uid://d0yq1r84eyiui" path="res://Assest/3d/open book/book_open.glb" id="1_jay1i"]
 
 [node name="ChronicleView" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_jay1i")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.083040595, 0, 0.14788008)

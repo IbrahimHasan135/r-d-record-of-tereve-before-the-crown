@@ -7,10 +7,10 @@
 [node name="WorldMap" type="Node3D"]
 
 [node name="Carpet" parent="." instance=ExtResource("2_sljur")]
-transform = Transform3D(-6.556708e-10, 0, 0.015, 0, 0.015, 0, -0.015, 0, -6.556708e-10, -0.16096926, -0.0128811, 0.027139693)
+transform = Transform3D(-1.0927848e-09, 0, 0.025, 0, 0.025, 0, -0.025, 0, -1.0927848e-09, -0.16096926, -0.0128811, 0.027139693)
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("3_du8yn")]
-transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, -0.018898517, 0.54316086, -0.027067348)
+transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 0.07545689, 0.54316086, -0.027067348)
 
 [node name="Table" parent="." instance=ExtResource("1_iexsy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026422024)
