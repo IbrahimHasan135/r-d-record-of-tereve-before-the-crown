@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3gp7itjmyix4"
-path.s3tc="res://.godot/imported/hand_paint_table__assets_0.png-8e38aedfbbaac468904494b076763ce0.s3tc.ctex"
+uid="uid://c4iaekw7ei8uo"
+path.s3tc="res://.godot/imported/hand_paint_table__assets_Image_1_2.png-b6e0b045b77076609f19ed37258623a0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "9c82df2fed96ba1b3b1c068194c12551"
+"md5": "30dc284253106cabc6375bba5fde2e6d"
 }
 
 [deps]
 
-source_file="res://Assest/3d/table war/hand_paint_table__assets_0.png"
-dest_files=["res://.godot/imported/hand_paint_table__assets_0.png-8e38aedfbbaac468904494b076763ce0.s3tc.ctex"]
+source_file="res://Assest/3d/table war/hand_paint_table__assets_Image_1_2.png"
+dest_files=["res://.godot/imported/hand_paint_table__assets_Image_1_2.png-b6e0b045b77076609f19ed37258623a0.s3tc.ctex"]
 
 [params]
 

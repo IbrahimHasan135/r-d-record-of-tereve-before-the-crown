@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wmdncvspubiq"
-path.s3tc="res://.godot/imported/hand_paint_table__assets_2.png-dcf9a05c2d9c14bf9bad97c63c318b8e.s3tc.ctex"
+uid="uid://bbvpejxetdxk"
+path.s3tc="res://.godot/imported/hand_paint_table__assets_Image_2.png-639665712a781961cc94ee6dd610313a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assest/3d/table war/hand_paint_table__assets_2.png"
-dest_files=["res://.godot/imported/hand_paint_table__assets_2.png-dcf9a05c2d9c14bf9bad97c63c318b8e.s3tc.ctex"]
+source_file="res://Assest/3d/table war/hand_paint_table__assets_Image_2.png"
+dest_files=["res://.godot/imported/hand_paint_table__assets_Image_2.png-639665712a781961cc94ee6dd610313a.s3tc.ctex"]
 
 [params]
 
