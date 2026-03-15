@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://co4cssu6dslf6"]
+[gd_scene load_steps=2 format=3 uid="uid://co4cssu6dslf6"]
+
+[ext_resource type="Script" uid="uid://cmq21omdulbog" path="res://Scene/main.gd" id="1_pknqr"]
 
 [node name="Before the Crown" type="Node3D"]
+script = ExtResource("1_pknqr")

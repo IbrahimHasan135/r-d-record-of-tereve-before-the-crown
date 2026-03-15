@@ -1,3 +1,24 @@
-[gd_scene format=3 uid="uid://bouoqyo3h05ue"]
+[gd_scene load_steps=4 format=3 uid="uid://bouoqyo3h05ue"]
+
+[ext_resource type="PackedScene" uid="uid://5mpsuuc6um4s" path="res://Assest/3d/table war/hand_paint_table__assets.glb" id="1_iexsy"]
+[ext_resource type="PackedScene" uid="uid://bvpkyerkd0qit" path="res://Assest/3d/carpet/carpet.glb" id="2_sljur"]
+[ext_resource type="PackedScene" uid="uid://pbfrfr33jd18" path="res://Assest/3d/old map/old_map_3d_model.glb" id="3_du8yn"]
 
 [node name="WorldMap" type="Node3D"]
+
+[node name="Table" parent="." instance=ExtResource("1_iexsy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009148955, 0, -0.020301104)
+
+[node name="Object_2" parent="Table/Sketchfab_model/Wood_Table&Table_Assets_obj_cleaner_materialmerger_gles" index="0"]
+transform = Transform3D(0.90073615, -0.43436664, 9.644877e-17, 0.43436664, 0.90073615, 2.2041002e-17, -9.644877e-17, 2.2041002e-17, 1, 0.19759977, 0.45611072, -1.01276924e-16)
+
+[node name="Object_3" parent="Table/Sketchfab_model/Wood_Table&Table_Assets_obj_cleaner_materialmerger_gles" index="1"]
+visible = false
+
+[node name="Carpet" parent="." instance=ExtResource("2_sljur")]
+transform = Transform3D(-6.556708e-10, 0, 0.015, 0, 0.015, 0, -0.015, 0, -6.556708e-10, -0.16096926, -0.0128811, 0.027139693)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("3_du8yn")]
+transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, -0.024315655, 0.54316086, -0.027067348)
+
+[editable path="Table"]
