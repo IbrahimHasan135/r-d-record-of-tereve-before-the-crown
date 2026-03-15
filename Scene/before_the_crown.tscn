@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://co4cssu6dslf6"]
 
-[ext_resource type="Script" uid="uid://cmq21omdulbog" path="res://Scene/main.gd" id="1_pknqr"]
+[ext_resource type="Script" uid="uid://cmq21omdulbog" path="res://Src/main.gd" id="1_uvcxi"]
 [ext_resource type="PackedScene" uid="uid://bouoqyo3h05ue" path="res://Scene/World Map View.tscn" id="2_uvcxi"]
 [ext_resource type="PackedScene" uid="uid://cm7fly61wap4x" path="res://Scene/Chronicle View.tscn" id="3_uj1ya"]
 
@@ -26,21 +26,21 @@ fog_sun_scatter = 0.16
 fog_density = 1.0
 adjustment_enabled = true
 adjustment_brightness = 0.8
-adjustment_contrast = 1.7
-adjustment_saturation = 0.53
+adjustment_contrast = 2.05
+adjustment_saturation = 0.3
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_uj1ya"]
 
 [sub_resource type="Compositor" id="Compositor_04wm5"]
 
 [node name="Before the Crown" type="Node3D"]
-script = ExtResource("1_pknqr")
+script = ExtResource("1_uvcxi")
 
 [node name="WorldMap" parent="." instance=ExtResource("2_uvcxi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018182397, 0, 0.08947863)
 
 [node name="ChronicleView" parent="." instance=ExtResource("3_uj1ya")]
-transform = Transform3D(0.037462734, 0.014019412, 0, -0.014019412, 0.037462734, 0, 0, 0, 0.04, 0.9248649, 0.72050136, 0.049211293)
+transform = Transform3D(-0.03746689, 0.014008297, -3.496911e-09, 0.014008297, 0.03746689, 0, 3.2754595e-09, -1.2246443e-09, -0.04, 0.99302804, 0.72050136, 0.049211293)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-1.523156e-08, -0.9373246, 0.34845752, -4.0971756e-08, 0.34845752, 0.9373246, -1, -8.881784e-16, -4.3711385e-08, 0.31278223, 1.2168201, 0.051933706)
@@ -48,7 +48,8 @@ transform = Transform3D(-1.523156e-08, -0.9373246, 0.34845752, -4.0971756e-08, 0
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.78356993, 1.4390734, 0.0841746)
 light_color = Color(0.99999994, 0.76542735, 0.42062163, 1)
-light_energy = 0.8
+light_energy = 1.689
+light_volumetric_fog_energy = 0.778
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4587413, 0.6369273, 0.0420873)
@@ -64,3 +65,5 @@ shadow_blur = 6.555
 environment = SubResource("Environment_uvcxi")
 camera_attributes = SubResource("CameraAttributesPractical_uj1ya")
 compositor = SubResource("Compositor_04wm5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]

@@ -1,10 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://bouoqyo3h05ue"]
+[gd_scene load_steps=8 format=3 uid="uid://bouoqyo3h05ue"]
 
+[ext_resource type="Script" uid="uid://b6idwai6i05cp" path="res://Src/world_task.gd" id="1_citit"]
 [ext_resource type="PackedScene" uid="uid://baj43qoiy5wg4" path="res://Assest/3d/table war/hand_paint_table__assets.glb" id="1_iexsy"]
 [ext_resource type="PackedScene" uid="uid://bvpkyerkd0qit" path="res://Assest/3d/carpet/carpet.glb" id="2_sljur"]
 [ext_resource type="PackedScene" uid="uid://pbfrfr33jd18" path="res://Assest/3d/old map/old_map_3d_model.glb" id="3_du8yn"]
+[ext_resource type="Texture2D" uid="uid://cgmnft8lwpo8y" path="res://Assest/3d/old map/old_map_3d_model_0.jpg" id="5_es2fr"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w0qlm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sq10x"]
+albedo_texture = ExtResource("5_es2fr")
 
 [node name="WorldMap" type="Node3D"]
+script = ExtResource("1_citit")
 
 [node name="Carpet" parent="." instance=ExtResource("2_sljur")]
 transform = Transform3D(-1.0927848e-09, 0, 0.025, 0, 0.025, 0, -0.025, 0, -1.0927848e-09, -0.16096926, -0.0128811, 0.027139693)
@@ -14,3 +22,8 @@ transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-
 
 [node name="Table" parent="." instance=ExtResource("1_iexsy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026422024)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.746906e-08, 0, 0.38560334, 0, 1, 0, -0.6284188, 0, -1.6855257e-08, 0.03135401, 0.54911494, -0.02160412)
+mesh = SubResource("PlaneMesh_w0qlm")
+surface_material_override/0 = SubResource("StandardMaterial3D_sq10x")

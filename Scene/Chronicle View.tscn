@@ -1,8 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://cm7fly61wap4x"]
+[gd_scene load_steps=4 format=3 uid="uid://cm7fly61wap4x"]
 
+[ext_resource type="Script" uid="uid://e0w0k16ivrqt" path="res://Src/chronicle_task.gd" id="1_13hmu"]
 [ext_resource type="PackedScene" uid="uid://d0yq1r84eyiui" path="res://Assest/3d/open book/book_open.glb" id="1_jay1i"]
+[ext_resource type="FontFile" uid="uid://1n8x0jq7mjiy" path="res://Assest/Font/MedievalSharp-Regular.ttf" id="3_kbcmq"]
 
 [node name="ChronicleView" type="Node3D"]
+script = ExtResource("1_13hmu")
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_jay1i")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.083040595, 0, 0.14788008)
+
+[node name="Label3D2" type="Label3D" parent="."]
+transform = Transform3D(1.3057225e-07, 1.0000001, -9.8965405e-09, -0.09822559, 2.2674211e-08, 0.99516433, 0.9951645, -1.2896868e-07, 0.09822556, 6.8256083, 2.84208, 1.447381)
+modulate = Color(0.19215687, 0.05490196, 0.003921569, 1)
+outline_modulate = Color(0.19215687, 0.05490196, 0.003921569, 1)
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis velit, elementum sed tortor eu, interdum efficitur elit. Praesent imperdiet convallis dui non consequat. Proin ultrices nulla nibh, vitae posuere lacus finibus non. Aenean sed fringilla augue. Integer sed neque placerat, imperdiet neque pharetra, eleifend dui. Sed a dignissim enim, id tincidunt est. Quisque consequat massa quis lacus posuere, non hendrerit sem volutpat. Nunc finibus ac nulla eu placerat. Proin viverra sodales lorem, eu congue augue commodo laoreet. Nullam eu nisi sed dolor blandit ultricies nec tincidunt neque. Fusce in tellus in dolor suscipit interdum quis eu quam."
+font = ExtResource("3_kbcmq")
+font_size = 100
+outline_size = 5
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 2
+width = 1500.0
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0.11309916, -3.84872e-08, 0.99358386, 0.99358386, 4.837464e-08, -0.11309916, 6.876983, 1.9363976, -8.329274)
+modulate = Color(0.19215687, 0.05490196, 0.003921569, 1)
+outline_modulate = Color(0.19215687, 0.05490196, 0.003921569, 1)
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis velit, elementum sed tortor eu, interdum efficitur elit. Praesent imperdiet convallis dui non consequat. Proin ultrices nulla nibh, vitae posuere lacus finibus non. Aenean sed fringilla augue. Integer sed neque placerat, imperdiet neque pharetra, eleifend dui. Sed a dignissim enim, id tincidunt est. Quisque consequat massa quis lacus posuere, non hendrerit sem volutpat. Nunc finibus ac nulla eu placerat. Proin viverra sodales lorem, eu congue augue commodo laoreet. Nullam eu nisi sed dolor blandit ultricies nec tincidunt neque. Fusce in tellus in dolor suscipit interdum quis eu quam."
+font = ExtResource("3_kbcmq")
+font_size = 100
+outline_size = 5
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 2
+width = 1500.0
